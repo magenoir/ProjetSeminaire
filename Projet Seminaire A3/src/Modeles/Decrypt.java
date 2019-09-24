@@ -2,7 +2,7 @@ package Modeles;
 
 public class Decrypt {
 
-	String decrypt(string data, string key) {
+	String decrypt(String data, String key) {
 		return "string";
 	}
 }

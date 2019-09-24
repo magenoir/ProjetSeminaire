@@ -2,10 +2,10 @@ package Modeles;
 
 public class CAD {
 
-	 DataSet GetRows(string rq_sql, string resultSetName) {
+	 DataSet GetRows(String rq_sql, String resultSetName) {
 		 
 	 }
-	 void ActionRows(string rq_sql) {
+	 void ActionRows(String rq_sql) {
 		 
 	 }
 	 

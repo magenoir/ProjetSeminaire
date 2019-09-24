@@ -2,10 +2,10 @@ package Modeles;
 
 public class Files {
 	
-	 string getData(string path) {
+	String getData(String path) {
 		
 	}
-	 void setData(string path) {
+	 void setData(String path) {
 		
 	}
 	 
