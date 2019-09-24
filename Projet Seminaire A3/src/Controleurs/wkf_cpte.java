@@ -1,5 +1,9 @@
 package Controleurs;
 
 public class wkf_cpte {
-	int test = 3;
+
+	public Boolean pcs_authentifier(String login, String password) {
+		
+		return null;
+	}
 }
