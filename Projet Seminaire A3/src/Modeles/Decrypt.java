@@ -1,11 +1,6 @@
 package Modeles;
 
 public class Decrypt {
-<<<<<<< HEAD
-	public String decrypt(String data, String key) {
-		return "string";
-=======
-
 	public String decrypt(String inputString, String key) 
 	{
 		StringBuilder sb1;
@@ -33,7 +28,6 @@ public class Decrypt {
             }
 		}
 		return sb1.toString();
->>>>>>> branch 'master' of https://github.com/Hakamate/ProjetSeminaire.git
 	}
 
 }

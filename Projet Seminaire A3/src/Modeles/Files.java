@@ -8,16 +8,6 @@ import java.io.OutputStream;
 
 
 public class Files {
-<<<<<<< HEAD
-	public String getData(String path) {
-		return path;
-	}
-	
-	 public void setData(String path) {
-		
-	}
-=======
-	 	
 	 	public String getData(String path) throws Exception
 	 	{
 	 		InputStream stream;
@@ -48,5 +38,4 @@ public class Files {
 	 	}
 
 	 
->>>>>>> branch 'master' of https://github.com/Hakamate/ProjetSeminaire.git
 }
