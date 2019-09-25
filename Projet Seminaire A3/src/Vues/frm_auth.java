@@ -1,7 +1,12 @@
 package Vues;
 
 //http://coderandcode.blogspot.com/2013/08/mvc-model-example-with-login-application.html
- import java.awt.FlowLayout;
+/*
+ * 
+ * DONE
+ *
+ */
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -21,10 +26,9 @@ public class frm_auth extends JFrame implements ActionListener{
     private JTextField txtUsername;
     private JPasswordField txtPassword;
     private JButton btnLogin;
-    private Map_P model;
   
     public frm_auth(){
-        super("Login MVC");
+        super("Login MVC Projet Seminaire");
       
         txtUsername = new JTextField(15);
         txtPassword = new JPasswordField(15);
@@ -33,9 +37,9 @@ public class frm_auth extends JFrame implements ActionListener{
       
         JPanel content = new JPanel();
         content.setLayout(new FlowLayout());
-        content.add(new JLabel("Username:"));
+        content.add(new JLabel("Username :"));
         content.add(txtUsername);
-        content.add(new JLabel("Password:"));
+        content.add(new JLabel("Password :"));
         content.add(txtPassword);
         content.add(btnLogin);
         
@@ -50,20 +54,18 @@ public class frm_auth extends JFrame implements ActionListener{
             }
         });
     }
+    
+    public JTextField getTxtUsername(){return txtUsername;}
+	public void setTxtUsername(JTextField txtUsername){this.txtUsername = txtUsername;}
+	public JPasswordField getTxtPassword(){return txtPassword;}
+	public void setTxtPassword(JPasswordField txtPassword){this.txtPassword = txtPassword;}
 
-    public void actionPerformed(ActionEvent e) {
-    }
-  
-    public Map_P getUser(){
-        model = new Map_P(txtUsername.getText(), txtPassword.getText());
-        return model;      
-    }
-  
-    public void showMessage(String msg){
-        JOptionPane.showMessageDialog(this, msg);
-    }
-  
-    public void addLoginListener(ActionListener log) {
-          btnLogin.addActionListener(log);
-        }
+	public void showMessage(String msg){JOptionPane.showMessageDialog(this, msg);}
+    public void addLoginListener(ActionListener log){btnLogin.addActionListener(log);}
+	
+    @Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
 }
