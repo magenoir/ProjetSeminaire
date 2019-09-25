@@ -38,7 +38,7 @@ public class wkf_cpte {
     	String query = model.selectIDbyLoginPassword(user, password);
         CAD bddConnect = new CAD();
     	System.out.println(query);
-    	bddConnect.GetRow(query);
-        return false;
+    	if(bddConnect.GetRow(query)){return true;}
+    	else {return false;}
       }
 }
